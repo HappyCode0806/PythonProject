@@ -12,7 +12,7 @@ def exit_check(command):
     if(command == "exit"):
         exit()
 
-def input_name_score():
+def input_name_score(): # 이름과 점수를 입력 받고 출력해준다.
     print("학점을 확인할 학생의 이름과 점수를 입력해주세요.")
     print("- 학생 이름")
     name = input("> ")
@@ -32,7 +32,7 @@ def input_name_score():
     print("{} 학생의 학점은 다음과 같습니다.".format(name))
     return score
 
-def Grade(score):
+def Grade(score):   # 점수에 따른 학점 부여 함수
     if(score == 100):
         print("{}점 - A+".format(score))
         print()
